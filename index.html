@@ -1,145 +1,16 @@
-<!DOCTYPE html><html lang="CN">
-  <head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <style type="text/css">
-    body { background: #222; text-align: center; }
-    #App {
-      width: 100%;
-      max-width: 1340px;
-      text-align: center;
-      margin: 100px auto 0;
-      font-family: 'Georgia', 'Athelas';
-    }
-    h1 {
-      color: #ccc;
-      font-size: 54px;
-      font-weight: 400;
-      line-height: 60px;
-    }
-    .box { 
-      width: 100%;
-    }
-    .box .li {
-      float: left;
-      width: 10.11%;
-      padding: 0.5%;
-      text-align: center;
-    }
-    .box .li a {
-      float: left;
-      width: 100%;
-      font-size: 22px;
-      line-height: 66px;
-      border-radius: 16px;
-      text-decoration: none;
-      color: rgba(255, 255, 255, .66);
-      background: rgba(255, 255, 255, .05);
-    }
-    .box a:hover { font-size: 24px; color: rgba(255, 255, 255, .88); background: rgba(255, 255, 255, .2); }
-    .form {
-      width: 790px;
-      height: 50px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 16px;
-    }
-    .form select {
-      width: 130px;
-      height: 48px;
-      border: none;
-      outline: none;
-      font-size: 20px;
-      text-align: center;
-      text-align-last: center;
-      border-radius: 16px 0 0 16px;
-      border-right: 1px solid #ccc;
-    }
-    .form select option {
-      direction: rtl;
-      text-align: center;
-    }
-    .form select option:focus {
-      outline: none;
-      border: 1px solid #fff;
-    }
-    .form input {
-      border: none;
-      width: 530px;
-      height: 48px;
-      font-size: 20px;
-      line-height: 38px;
-      text-align: center;
-    }
-    .form input:focus {
-      outline: none;
-      border: 1px solid #fff;
-    }
-    .form button {
-      width: 118px;
-      height: 50px;
-      border: none;
-      outline: none;
-      font-size: 20px;
-      border-radius: 0 16px 16px 0;
-    }
-    .form button:hover {
-      background: #ccc;
-    }
-    @media screen and (max-width: 1080px){
-      #App {
-        width: 96%;
-        margin: 30px auto 0;
-      }
-      .box .li {
-        width: 31%;
-        padding: 1%;
-      }
-      .box .li a {
-        font-size: 34px;
-        line-height: 88px;
-      }
-      .form {
-        width: 660px;
-        height: 66px;
-        margin: 40px auto;
-        background: #fff;
-        border-radius: 16px;
-      }
-      .form select {
-        width: 200px;
-        height: 66px;
-        border: none;
-        outline: none;
-        font-size: 36px;
-        text-align: center;
-        text-align-last: center;
-        border-radius: 16px 0 0 16px;
-        border-right: 1px solid #ccc;
-      }
-      .form input {
-      border: none;
-      width: 300px;
-      height: 60px;
-      font-size: 34px;
-      line-height: 38px;
-      text-align: center;
-    }
-    .form button {
-      width: 134px;
-      height: 66px;
-      border: none;
-      outline: none;
-      font-size: 34px;
-      border-radius: 0 16px 16px 0;
-    }
-    }
+  <title>xuweihua-</title>
+  <script src="https://unpkg.com/vue@2"></script>
+  <style type=text/css>
+    body{background:#222;text-align:center;}#App{width:100%;max-width:1340px;text-align:center;font-family:Georgia, Athelas;margin:100px auto 0;}h1{color:#ccc;font-size:54px;font-weight:400;line-height:60px;}.box{width:100%;}.box .li{float:left;width:10.11%;text-align:center;padding:.5%;}.box .li a{float:left;width:100%;font-size:22px;line-height:66px;border-radius:16px;text-decoration:none;color:rgba(255,255,255,.66);background:rgba(255,255,255,.05);}.box a:hover{font-size:24px;color:rgba(255,255,255,.88);background:rgba(255,255,255,.2);}.form{width:790px;height:50px;background:#fff;border-radius:16px;margin:40px auto;}.form select{width:130px;height:48px;border:none;outline:none;font-size:20px;text-align:center;text-align-last:center;border-radius:16px 0 0 16px;border-right:1px solid #ccc;}.form select option{direction:rtl;text-align:center;}.form input{border:none;width:530px;height:48px;font-size:20px;line-height:38px;text-align:center;}.form button{width:118px;height:50px;border:none;outline:none;font-size:20px;border-radius:0 16px 16px 0;}.form button:hover{background:#ccc;}.form select option:focus,.form input:focus{outline:none;border:1px solid #fff;}@media screen and max-width 1080px{#App{width:96%;margin:30px auto 0;}.box .li{width:31%;padding:1%;}.box .li a{font-size:34px;line-height:88px;}.form{width:660px;height:66px;background:#fff;border-radius:16px;margin:40px auto;}.form select{width:200px;height:66px;border:none;outline:none;font-size:36px;text-align:center;text-align-last:center;border-radius:16px 0 0 16px;border-right:1px solid #ccc;}.form input{border:none;width:300px;height:60px;font-size:34px;line-height:38px;text-align:center;}.form button{width:134px;height:66px;border:none;outline:none;font-size:34px;border-radius:0 16px 16px 0;}}
   </style>
-  <title>xuweihua.net</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
-  <div id="App">
+  <div id="app">
     <h1>{{title}}</h1>
     <div class="form">
       <select v-model="select" @change="change">
@@ -154,116 +25,117 @@
       </div>
     </div>
   </div>
-</body
-></html>
+</body>
+</html>
 <script>
-var app = new Vue({ el: "#App",
- data: {
-  title: '',
-  select: parseInt(window.localStorage.getItem('_NAVIGATION_TEMP')),
-  selectData: [
-    { id: 1, name: 'Bing' },
-    { id: 2, name: 'Baidu' },
-    { id: 3, name: 'Google' }
-  ],
-  input: '',
-  links: [
-// 公司
-{ name: '阿里云', link: 'https://www.aliyun.com/?utm_content=se_1008364713' },  
-{ name: '腾讯云', link: 'https://cloud.tencent.com/login?s_url=https%3A%2F%2Fcloud.tencent.com%2F' },
-{ name: '公众号', link: 'https://mp.weixin.qq.com' },
-{ name: '学校版', link: 'http://192.168.10.200:8080' },
-{ name: '财税版', link: 'http://192.168.10.200:7070' },
-{ name: 'GIT库', link: 'http://192.168.10.250:10000' },
-{ name: 'API文档', link: 'http://192.168.10.250:1111/#/view' },
-{ name: 'Jenkins', link: 'http://192.168.10.250:7000' },
-{ name: '蓝湖UI', link: 'https://lanhuapp.com/web/#/user/login' },
-// 个人
-{ name: '主服务', link: 'http://203.195.176.224:8195/029118fd/' },
-{ name: '轻服务', link: 'http://81.71.141.203:9835/aa43aec6'},
-{ name: '个人站', link: 'https://www.xuweihua.net'},
-{ name: '科贸站', link: 'https://www.hzkmzx.com'},
-{ name: 'Gitee', link: 'https://gitee.com'},
-{ name: '蓝湖', link: 'https://lanhuapp.com'},
-{ name: '掘金', link: 'https://juejin.cn'},
-{ name: '腾讯课程', link: 'https://ke.qq.com'},
-{ name: 'CNBeta', link: 'https://www.cnbeta.com'},
-// 技术
-{ name: 'VUE2', link: 'https://cn.vuejs.org/v2/guide/' },
-{ name: 'VUE3', link: 'https://v3.cn.vuejs.org/guide/introduction.html' },
-{ name: 'uniApp', link: 'https://uniapp.dcloud.io/component/README' },
-{ name: 'eCharts', link: 'https://echarts.apache.org/examples/zh/index.html' },
-{ name: 'Element2', link: 'https://element.eleme.cn/2.15/#/zh-CN/component/installation' },
-{ name: 'Element3', link: 'https://element-plus.org/zh-CN/component/button.html' },
-{ name: 'Egg.js', link: 'https://eggjs.org/zh-cn/intro/quickstart.html' },
-{ name: 'flutter', link: 'https://flutter.cn/docs' },
-{ name: 'PUBcn', link: 'https://pub.flutter-io.cn' },
-// 免费资源
-{ name: '站点工具', link: 'http://tool.chinaz.com' },
-{ name: '矢量图标', link: 'https://www.iconfont.cn' },
-{ name: '在线测速', link: 'https://www.sojson.com/gongju/wangsu.html' },
-{ name: '素材中国', link: 'http://www.sccnn.com' },
-{ name: 'uimaker', link: 'http://www.uimaker.com' },
-{ name: '设计之家', link: 'https://www.sj33.cn' },
-{ name: '码云笔记', link: 'https://www.mybj123.com' },
-{ name: '彼岸图库', link: 'https://pic.netbian.com' },
-{ name: '未来MAC', link: 'https://mac.orsoon.com' },
-// 资源网站
-{ name: '西子湖畔', link: 'https://www.xizi.com' },
-{ name: '今日惠州', link: 'http://www.huizhou.cn' },
-{ name: 'bilibili', link: 'https://www.bilibili.com' },
-{ name: '起点', link: 'https://www.qidian.com' },
-{ name: '淘宝', link: 'https://www.taobao.com' },
-{ name: '威锋', link: 'https://www.feng.com' },
-{ name: '知乎', link: 'https://www.zhihu.com/explore' },
-{ name: 'Bing翻译', link: 'https://cn.bing.com/translator?ref=TThis&&text=&from=&to=en' },
-{ name: '远景论坛', link: 'http://bbs.pcbeta.com/' },
-// 我的工具
-{ name: '天气预报', link: 'http://weathernew.pae.baidu.com/weathernew/pc?query=%E6%83%A0%E5%B7%9E%E5%A4%A9%E6%B0%94&srcid=4982' },
-{ name: '台风路径', link: 'http://typhoon.zjwater.gov.cn' },
-{ name: '万年历', link: 'http://yun.rili.cn/wnl' },
-{ name: '百度地图', link: 'https://map.baidu.com/@12738960.373712577,2628029.0908238795,15.89z' },
-{ name: '微博', link: 'https://weibo.com' },
-{ name: '天涯', link: 'https://bbs.tianya.cn' },
-{ name: 'reddit', link: 'https://www.reddit.com' },
-{ name: 'Youtube', link: 'https://www.Youtube.com' },
-{ name: 'Twitter', link: 'https://www.twitter.com' }
-]},
-mounted () {
-  const temp = new Date();
-  this.title = temp.getFullYear() + '.';
-  let i = temp.getMonth() + 1;
-  i = i < 10 ? '0' + i : i;
-  this.title = this.title + i;
-  i = temp.getDate();
-  i = i < 10 ? '0' + i : i;
-  this.title = this.title + '.' + i;
-  i = temp.getDay();
-  if (i === 0) i = 'sunday';
-  if (i === 1) i = 'monday';
-  if (i === 2) i = 'tuesday';
-  if (i === 3) i = 'wednesday';
-  if (i === 4) i = 'thursday';
-  if (i === 5) i = 'friday';
-  if (i === 6) i = 'saturday';
-  this.title = this.title + ' ' + i + ' ' ;
-  i = temp.getHours();i = i < 10 ? '0' + i : i;
-  this.title = this.title + ' ' + i;
-  i = temp.getMinutes();
-  i = i < 10 ? '0' + i : i;
-  this.title = this.title + '.' + i;
- },
- methods: {
-  change () {
-    window.localStorage.setItem('_NAVIGATION_TEMP', this.select)
+var app = new Vue({
+  el: '#app',
+  data: {
+    title: '',
+    select: parseInt(window.localStorage.getItem('_NAVIGATION_TEMP')),
+    selectData: [
+      { id: 1, name: 'Bing' },
+      { id: 2, name: 'Baidu' },
+      { id: 3, name: 'Google' }
+    ],
+    input: '',
+    links: [
+  // 公司
+  { name: '阿里云', link: 'https://www.aliyun.com/?utm_content=se_1008364713' },  
+  { name: '腾讯云', link: 'https://cloud.tencent.com/login?s_url=https%3A%2F%2Fcloud.tencent.com%2F' },
+  { name: '公众号', link: 'https://mp.weixin.qq.com' },
+  { name: '学校版', link: 'http://192.168.10.200:8080' },
+  { name: '财税版', link: 'http://192.168.10.200:7070' },
+  { name: 'GIT库', link: 'http://192.168.10.250:10000' },
+  { name: 'API文档', link: 'http://192.168.10.250:1111/#/view' },
+  { name: 'Jenkins', link: 'http://192.168.10.250:7000' },
+  { name: '蓝湖UI', link: 'https://lanhuapp.com/web/#/user/login' },
+  // 个人
+  { name: '主服务', link: 'http://203.195.176.224:8195/029118fd/' },
+  { name: '轻服务', link: 'http://81.71.141.203:9835/aa43aec6'},
+  { name: '个人站', link: 'https://www.xuweihua.net'},
+  { name: '科贸站', link: 'https://www.hzkmzx.com'},
+  { name: 'Gitee', link: 'https://gitee.com'},
+  { name: '蓝湖', link: 'https://lanhuapp.com'},
+  { name: '掘金', link: 'https://juejin.cn'},
+  { name: '腾讯课程', link: 'https://ke.qq.com'},
+  { name: 'CNBeta', link: 'https://www.cnbeta.com'},
+  // 技术
+  { name: 'VUE2', link: 'https://cn.vuejs.org/v2/guide/' },
+  { name: 'VUE3', link: 'https://v3.cn.vuejs.org/guide/introduction.html' },
+  { name: 'uniApp', link: 'https://uniapp.dcloud.io/component/README' },
+  { name: 'eCharts', link: 'https://echarts.apache.org/examples/zh/index.html' },
+  { name: 'Element2', link: 'https://element.eleme.cn/2.15/#/zh-CN/component/installation' },
+  { name: 'Element3', link: 'https://element-plus.org/zh-CN/component/button.html' },
+  { name: 'Egg.js', link: 'https://eggjs.org/zh-cn/intro/quickstart.html' },
+  { name: 'flutter', link: 'https://flutter.cn/docs' },
+  { name: 'PUBcn', link: 'https://pub.flutter-io.cn' },
+  // 免费资源
+  { name: '站点工具', link: 'http://tool.chinaz.com' },
+  { name: '矢量图标', link: 'https://www.iconfont.cn' },
+  { name: '在线测速', link: 'https://www.sojson.com/gongju/wangsu.html' },
+  { name: '素材中国', link: 'http://www.sccnn.com' },
+  { name: 'uimaker', link: 'http://www.uimaker.com' },
+  { name: '设计之家', link: 'https://www.sj33.cn' },
+  { name: '码云笔记', link: 'https://www.mybj123.com' },
+  { name: '彼岸图库', link: 'https://pic.netbian.com' },
+  { name: '未来MAC', link: 'https://mac.orsoon.com' },
+  // 资源网站
+  { name: '西子湖畔', link: 'https://www.xizi.com' },
+  { name: '今日惠州', link: 'http://www.huizhou.cn' },
+  { name: 'bilibili', link: 'https://www.bilibili.com' },
+  { name: '起点', link: 'https://www.qidian.com' },
+  { name: '淘宝', link: 'https://www.taobao.com' },
+  { name: '威锋', link: 'https://www.feng.com' },
+  { name: '知乎', link: 'https://www.zhihu.com/explore' },
+  { name: 'Bing翻译', link: 'https://cn.bing.com/translator?ref=TThis&&text=&from=&to=en' },
+  { name: '远景论坛', link: 'http://bbs.pcbeta.com/' },
+  // 我的工具
+  { name: '天气预报', link: 'http://weathernew.pae.baidu.com/weathernew/pc?query=%E6%83%A0%E5%B7%9E%E5%A4%A9%E6%B0%94&srcid=4982' },
+  { name: '台风路径', link: 'http://typhoon.zjwater.gov.cn' },
+  { name: '万年历', link: 'http://yun.rili.cn/wnl' },
+  { name: '百度地图', link: 'https://map.baidu.com/@12738960.373712577,2628029.0908238795,15.89z' },
+  { name: '微博', link: 'https://weibo.com' },
+  { name: '天涯', link: 'https://bbs.tianya.cn' },
+  { name: 'reddit', link: 'https://www.reddit.com' },
+  { name: 'Youtube', link: 'https://www.Youtube.com' },
+  { name: 'Twitter', link: 'https://www.twitter.com' }
+  ]},
+  mounted () {
+    const temp = new Date();
+    this.title = temp.getFullYear() + '.';
+    let i = temp.getMonth() + 1;
+    i = i < 10 ? '0' + i : i;
+    this.title = this.title + i;
+    i = temp.getDate();
+    i = i < 10 ? '0' + i : i;
+    this.title = this.title + '.' + i;
+    i = temp.getDay();
+    if (i === 0) i = 'sunday';
+    if (i === 1) i = 'monday';
+    if (i === 2) i = 'tuesday';
+    if (i === 3) i = 'wednesday';
+    if (i === 4) i = 'thursday';
+    if (i === 5) i = 'friday';
+    if (i === 6) i = 'saturday';
+    this.title = this.title + ' ' + i + ' ' ;
+    i = temp.getHours();i = i < 10 ? '0' + i : i;
+    this.title = this.title + ' ' + i;
+    i = temp.getMinutes();
+    i = i < 10 ? '0' + i : i;
+    this.title = this.title + '.' + i;
   },
-  search () {
-    let url = ''
-    if (this.select == 1) url = 'https://cn.bing.com/search?q='
-    if (this.select == 2) url = 'https://www.baidu.com/s?wd='
-    if (this.select == 3) url = 'https://www.google.com/search?q='
-    window.open(url + this.input)
+  methods: {
+    change () {
+      window.localStorage.setItem('_NAVIGATION_TEMP', this.select)
+    },
+    search () {
+      let url = ''
+      if (this.select == 1) url = 'https://cn.bing.com/search?q='
+      if (this.select == 2) url = 'https://www.baidu.com/s?wd='
+      if (this.select == 3) url = 'https://www.google.com/search?q='
+      window.open(url + this.input)
+    }
   }
- }
 })
 </script>
